@@ -33,7 +33,7 @@ public class Game {
             if (guessed == 0) {
                 fails += 1;
             } else {
-                numOfGuessedWords += 1;
+                numOfGuessedWords += guessed;
                 if (numOfGuessedWords == lengthOfWord) {
                     won = true;
                     break;
