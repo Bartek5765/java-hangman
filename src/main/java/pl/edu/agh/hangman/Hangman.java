@@ -57,7 +57,6 @@ public class Hangman {
     public static void main(String[] args) {
         Reader reader = new Reader();
         String randomWorld = reader.getRandomWord();
-        System.out.println(randomWorld);
         Game newGame = new Game(randomWorld);
         newGame.run(HANGMANPICS);
     }
