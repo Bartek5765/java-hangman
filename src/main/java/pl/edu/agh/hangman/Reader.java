@@ -42,6 +42,7 @@ public class Reader {
                 words.add(line);
             }
 
+
         } catch (IOException e) {
             words = List.of();
             e.printStackTrace();
