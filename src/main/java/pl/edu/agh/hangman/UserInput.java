@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class UserInput {
     public static char finalChar() {
-        Scanner scanner = new Scanner(originalInput);
+        Scanner scanner = new Scanner(System.in);
         boolean correct = false;
         String input = "";
         while (!correct) {

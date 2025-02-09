@@ -31,6 +31,7 @@ public class Game {
             int guessed = Comperator.compareWordToLetter(word, arrOfGuessedLetters, input);
             if (guessed == 0) {
                 fails += 1;
+
             } else {
                 numOfGuessedWords += 1;
                 if (numOfGuessedWords == lengthOfWord) {
