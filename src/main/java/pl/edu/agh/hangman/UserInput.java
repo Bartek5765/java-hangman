@@ -19,7 +19,7 @@ public class UserInput {
             }
         }
 
-        return input.toLowerCase().charAt(0);
+        return input.toUpperCase().charAt(0);
 
 
 
