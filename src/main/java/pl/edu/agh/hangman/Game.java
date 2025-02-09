@@ -27,10 +27,8 @@ public class Game {
         boolean won = false;
         Scanner scanner = new Scanner(System.in);
         while (fails < hanhManSteps.length) {
-            // print picture abd word
-            String ch = scanner.nextLine();
-            // check scanner
-            int guessed = Comperator.compareWordToLetter(word, arrOfGuessedLetters, ch.charAt(0));
+            char input = UserInput.finalChar();
+            int guessed = Comperator.compareWordToLetter(word, arrOfGuessedLetters, input);
             if (guessed == 0) {
                 fails += 1;
             } else {
