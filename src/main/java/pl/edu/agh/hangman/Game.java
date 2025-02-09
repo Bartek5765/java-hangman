@@ -1,7 +1,6 @@
 package pl.edu.agh.hangman;
 
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
 
 public class Game {
@@ -29,7 +28,8 @@ public class Game {
         while (fails < hanhManSteps.length) {
             Printer.printOutput(fails, this.arrOfGuessedLetters);
             char input = UserInput.finalChar(guesses);
-            int guessed = Comperator.compareWordToLetter(word, arrOfGuessedLetters, input);
+            Comparator comparator = new CompareWordToLetter();
+            int guessed = comparator.compareWordToLetter(word, arrOfGuessedLetters, input);
             if (guessed == 0) {
                 fails += 1;
             } else {

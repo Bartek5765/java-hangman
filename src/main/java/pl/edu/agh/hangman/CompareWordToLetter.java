@@ -1,7 +1,7 @@
 package pl.edu.agh.hangman;
 
-public class Comperator {
-    public static int compareWordToLetter(String word, char[] to_compare, char letter) {
+public class CompareWordToLetter implements Comparator{
+    public int compareWordToLetter(String word, char[] to_compare, char letter) {
         int changes = 0;
         for (int i = 0; i < word.length(); i++) {
             if (word.charAt(i) == letter) {
