@@ -23,6 +23,7 @@ public class Game {
     }
 
     public void run(String[] hanhManSteps) {
+
         int fails = 0;
         boolean won = false;
         while (fails < hanhManSteps.length) {
