@@ -32,10 +32,7 @@ public class Reader {
             return "";
         }
         int index = random.nextInt(words.size());
-            return words.get(index);
-        }
-        private String deleteSpecialCharacter(String line) {
-        String cleaned = line.replaceAll("[^a-zA-Z0-9]", "");
+        String cleaned = words.get(index).replaceAll("[^a-zA-Z0-9]", "");
         return cleaned.toUpperCase();
-        }
     }
+}
