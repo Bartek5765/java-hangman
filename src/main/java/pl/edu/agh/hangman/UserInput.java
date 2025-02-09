@@ -18,7 +18,7 @@ public class UserInput {
                 correct = true;
             }
         }
-
+        scanner.close();
         return input.toUpperCase().charAt(0);
 
 
