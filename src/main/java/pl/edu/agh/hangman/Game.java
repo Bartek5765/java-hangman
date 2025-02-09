@@ -25,13 +25,12 @@ public class Game {
     public void run(String[] hanhManSteps) {
         int fails = 0;
         boolean won = false;
-        Scanner scanner = new Scanner(System.in);
         while (fails < hanhManSteps.length) {
+            Printer.printOutput(fails, this.arrOfGuessedLetters);
             char input = UserInput.finalChar();
             int guessed = Comperator.compareWordToLetter(word, arrOfGuessedLetters, input);
             if (guessed == 0) {
                 fails += 1;
-
             } else {
                 numOfGuessedWords += 1;
                 if (numOfGuessedWords == lengthOfWord) {
@@ -40,7 +39,10 @@ public class Game {
                 }
             }
         }
-        // print picture abd word
-        //printFinalResult
+        if (won) {
+            Printer.printWinnersFace();
+        } else {
+            Printer.printLoosersFace();
+        }
     }
 }
