@@ -28,7 +28,7 @@ public class Game {
         boolean won = false;
         while (fails < hanhManSteps.length) {
             Printer.printOutput(fails, this.arrOfGuessedLetters);
-            char input = UserInput.finalChar();
+            char input = UserInput.finalChar(guesses);
             int guessed = Comperator.compareWordToLetter(word, arrOfGuessedLetters, input);
             if (guessed == 0) {
                 fails += 1;
